@@ -1,0 +1,124 @@
+.form__step h3 {
+  margin: 10px 0;
+}
+@media (min-width: 768px) {
+  .main__formContainer {
+    width: 700px;
+    margin: 20px auto;
+  }
+}
+/*radio buttons*/
+.radioOptions {
+  margin: 25px 0;
+  display: flex;
+  /* flex-direction: column;
+  justify-content: center; */
+  justify-content: space-evenly;
+  align-items: center;
+  line-height: 2;
+  position: relative;
+}
+.radio input {
+  margin-right: 10px;
+}
+@media (max-width: 500px) {
+  .radioOptions{
+    justify-content: space-between;
+    width: 100%;
+  }
+  .radio {
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+@media (max-width: 320px) {
+  .radioOptions{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .radio {
+    text-align: left;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+/*imputs*/
+.formData {
+  margin: 10px 0 15px;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+  gap: 20px;
+} 
+.datauser {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin: 10px 0;
+  position: relative;
+}
+.datauser label {
+  opacity: .7;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.datauser input {
+  height: 30px;
+  border-radius: 5px;
+  padding: 18px 8px;
+  background-color: var(--bg-input);
+  border: none;
+  color: white;
+  outline: none;
+}
+.datauser input:focus {
+  box-shadow: 0px 0px 10px var(--btn-hover);
+}
+.datauser input:valid {
+  background-color: white;
+  color: black;
+}
+
+/*BTN*/
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-container.end {
+  justify-content: flex-end;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 18px;
+  border-radius: 5px;
+  font-weight: 400;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.btn-blue {
+  border: 1px solid var(--btn);
+  background-color: var(--btn);
+}
+.btn-transparent {
+  background-color: transparent;
+  border: 1px solid var(--btn);
+}
+.btn:hover {
+  background-color: var(--btn-hover);
+}
+
+/*message error*/
+.messageError {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  bottom: -40px;
+}
+.messageError.radio{
+  left: 0;
+}

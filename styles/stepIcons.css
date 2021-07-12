@@ -1,0 +1,49 @@
+/*icons container*/
+.main__stepIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.main__stepIcons .icons {
+  border: 2px solid var(--icons);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: relative;
+  margin: 0 20px;
+}
+
+/*Add active class width javascript*/
+.main__stepIcons .icons.active {
+  background: var(--icons);
+}
+
+
+.main__stepIcons .icons.sucess {
+  background: #69ab0b;
+  border: 2px solid #69ab0b;
+} 
+.icons.active svg {
+  fill: white;
+}
+.icons.sucess svg {
+  fill: white;
+}
+/*Lines*/
+.icons::after{
+  content: "";
+  background: var(--icons);
+  width: 42px;
+  height: 2px;
+  position: absolute;
+  left: 100%;
+}
+
+.icons:nth-child(3)::after{
+  content: none;
+}

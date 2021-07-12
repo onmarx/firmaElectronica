@@ -1,0 +1,32 @@
+#thirdView  h3 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 16px;
+}
+.btn-container.center{
+  justify-content: center;
+}
+.btn-container.center .btn-transparent {
+  margin-right: 20px;
+}
+
+#thirdView p {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  width: max-content;
+  padding: 10px 0; 
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+@media (max-width: 424px) {
+  #thirdView p {
+    bottom: 100px;
+  }
+}
+#thirdView p.active{
+  display: block;
+}

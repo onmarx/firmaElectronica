@@ -1,0 +1,84 @@
+.form__step p {
+  margin: 5px 0 20px;
+  
+}
+.buttonsSocialsContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.btnSocial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: max-content;
+  text-transform: inherit;
+  height: 28px;
+  font-size: 11px;
+  color: rgba(2, 0, 0, 0.5);
+  font-weight: 700;
+  padding: 12px 8px;
+  border-radius: 20px;
+  /* margin-right: 18px;
+  margin-bottom: 14px; */
+  transition: all .2s;
+}
+
+.btnSocial.active {
+  color: #1192ee;
+}
+.btnSocial.active:hover{
+  background: white;
+  color: #e2361f;
+}
+.btnSocial:hover{
+  background: white;
+  color: #1192ee;
+}
+.btnSocial p {
+  margin: 0 8px;
+}
+.btnSocial i {
+  font-size: 14px;
+  user-select: none;
+}
+
+/* network socials inputs */
+
+.networkSocials {
+  margin: 30px 0;
+  line-height: 25px;
+}
+.networkSocials .messageSocial {
+  color: #1192ee;
+  opacity: .6;
+  margin-bottom: 20px;
+}
+.datasocialContainer {
+  margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 400px;
+  display: none;
+  position: relative;
+}
+.datasocialContainer.active {
+  display: flex;
+}
+.datasocialContainer label {
+  color: rgba(239, 243, 245, .7);
+  width: 140px;
+}
+.datasocialContainer input {
+  background: var(--bg-input);
+  color: white;
+  height: 30px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10px;
+  padding: 8px 16px;
+}
